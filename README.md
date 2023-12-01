@@ -1,3 +1,3 @@
-Advent Code 2023 
+Advent of Code 2023 
 &&
-Christmas Code challeng WWC
+Christmas Code challenge with WWC
