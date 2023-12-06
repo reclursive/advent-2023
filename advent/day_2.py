@@ -34,18 +34,18 @@ def cube_game(rc, gc, bc):
             print("NOOO")
         for round in rounds[1:end]:
             print(round)
-            red = re.match('^([\s\d]+)$', round) or 0
-            green = re.match('(\w+)\W(g\w+)', round) or 0
-            blue = re.match('(\w+)\W(b\w+)', round) or 0
+            red = re.findall("\d+ r", round) or 0
+            green = re.findall("\d+ g", round) or 0
+            blue = re.findall("\d+ b", round) or 0
             print("truuuest")
             print(red, "reed")
             print(blue, "bluuuue")
             print(green, "greeeenk")
 
-            if red > rc or green > gc or blue > bc:
-                break
-            else:
-                tally = tally + int(game_num)
+            # if red > rc or green > gc or blue > bc:
+            #     break
+            # else:
+            #     tally = tally + int(game_num)
     
         print(tally)
 
