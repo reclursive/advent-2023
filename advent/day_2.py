@@ -1,12 +1,7 @@
 
-file = open("input/tester.txt")
+file = open("input/no_2.txt")
 test = file.read()
 import re
-
-#  12 red cubes, 13 green cubes, and 14 blue cubes
-# semi_colon = ";"
-# for semi_colon in test:
-# print(test)
 input_2 = test.lower()
 container = input_2.split("\n")
 
@@ -22,32 +17,38 @@ valid_game = []
 def cube_game(rc, gc, bc):
     tally = 0
     for game in container:
-        print(game)
+        print(game, "GAME END")
         rounds = re.split(r';|: ', game)
-        game_num = rounds[0].split(" ")[1]
-        print(game_num, "NUMBIEE")
+        game_num = int(rounds[0].split(" ")[1])
+        print(tally, "start Tally")
+        tally +=game_num
+        print(tally, "TALLY")
+        print(game_num, "GAME START")
         print(rounds)
-        print(len(rounds))
+        print(len(rounds), "NUMBER OF ROUNDS")
         end = len(rounds)
         if len(rounds) == 3:
             end = (len(rounds)-1)
             print("NOOO")
         for round in rounds[1:end]:
-            print(round)
-            red = re.findall("\d+ r", round) or 0
+            print(round, "ROUND")
+            red = re.findall("\d+ r", round) or 0 
             green = re.findall("\d+ g", round) or 0
-            blue = re.findall("\d+ b", round) or 0
+            blue = re.findall("\d+ b", round) or 0 
+            print(red)
+            print(blue)
+            print(green)
             print("truuuest")
-            print(red, "reed")
-            print(blue, "bluuuue")
-            print(green, "greeeenk")
+            if (red is not 0 and int(red[0].split(" ")[0]) > rc) or (blue is not 0 and int(blue[0].split(" ")[0]) > bc) or (green is not 0 and int(green[0].split(" ")[0])) > gc:
+                tally = tally - game_num
+                break
+            else:
+                continue
 
-            # if red > rc or green > gc or blue > bc:
-            #     break
-            # else:
-            #     tally = tally + int(game_num)
-    
-        print(tally)
+    print(tally, "TALLY HOO")
+            
+        
+
 
 cube_game(12, 13, 14)
 
