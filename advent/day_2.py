@@ -115,4 +115,3 @@ def cube_game(input):
     
 
 cube_game(container)
-
