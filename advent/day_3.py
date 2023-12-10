@@ -21,13 +21,15 @@ def gondola(input):
     # regex_1 = [^\d.]
     engine_map = {}
     # print(input)
+    tally = 0
     
     for index, line in enumerate(input):
-        tally = 0
         # pass
         # line_2 = line.replace([^a-zA-Z\d\s\.], "bar")
         auto_bings = re.sub("[^0-9a-zA-Z\.]", "BING", line)
         line_3 = re.split(r"[^0-9a-zA-Z$]", auto_bings)
+
+        print(len(line_3), "LINEs")
 
         for idx, char in enumerate(line_3):
             print(char, idx)
@@ -35,23 +37,25 @@ def gondola(input):
                 continue
             elif char.isalnum():
                 if len(char) == 1:
-                    if line[index-1][char[idx]] == "BING" or line[index+1][char[idx]] == "BING":
+                    if line[index-1][idx] == "BING" or line[index+1][idx] == "BING":
                         tally += char
                     else:
                         continue
-                elif len(char)>1:
-                    length = len(char)+2
-                    if line[index-1][char[idx]:length] == "BING" or line[index+1][char[idx]:length] == "BING":
+                elif len(char)>2 and idx> 0:
+                    diag_FF = idx +len(char)
+                    diag_RW = idx -1 
+                    if line[index-1][diag_FF] == "BING" or line[index+1][diag_RW] == "BING" or line[index+1][diag_FF] == "BING" or line[index-1][diag_RW] == "BING" or line[index-1][diag_FF] =="BING":
                         tally += char
                     else:
-                        continue
+                        splitty = char.split("BING")
+                        print(splitty)
+                        print(char, "CLEAR NUMB")
+
             else:
-                length = len(char)+2
-                line[index-1][char[idx]] ==
-                print(char, idx)
-                berb = "BLARGHH"
-                print(berb)
-        print(line_3)
+                splitty = char[idx].split("BING")
+                print(splitty, "splitty")
+        print(tally, "tally")
+        # print(line_3)
         # print(line_2, index)
         # for idx, char in enumerate(line_3):
         #     # print(char, idx)
