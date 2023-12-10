@@ -1,20 +1,8 @@
-Game 1: 4 red, 1 green, 1 blue; 1 green, 1 blue, 9 red; 8 red, 1 green, 6 blue; 1 green, 1 blue, 2 red
-Game 2: 6 red, 1 green; 4 blue, 4 green, 5 red; 1 green, 6 blue, 6 red
-Game 3: 3 red, 3 green; 3 green, 1 blue, 7 red; 3 green, 5 red, 1 blue; 9 red, 4 green; 1 blue, 2 green, 5 red
-Game 4: 2 blue, 5 green, 9 red; 7 red, 1 blue; 2 green, 1 blue, 5 red; 3 blue, 2 green; 4 green, 1 red, 7 blue; 2 green, 5 blue, 7 red
-Game 5: 3 red, 2 blue; 5 red, 3 blue; 10 blue, 10 red, 1 green; 4 blue
-Game 6: 1 green, 10 blue, 5 red; 8 blue, 9 green; 1 green, 7 red, 1 blue; 1 green, 6 blue, 6 red; 1 blue, 1 green; 8 blue, 1 green, 5 red
-Game 7: 7 green, 12 blue, 3 red; 9 red, 2 blue; 8 blue, 8 red, 7 green; 6 red, 7 green, 5 blue
-Game 8: 8 blue, 7 red; 1 green, 5 blue, 5 red; 1 blue, 4 green, 7 red; 5 blue, 6 red, 1 green; 7 blue, 2 green, 8 red
-Game 9: 3 red, 3 blue, 1 green; 2 red, 1 blue, 9 green; 3 red, 12 green, 3 blue; 2 red, 7 green, 2 blue; 8 green, 4 blue; 2 red, 2 green
-Game 10: 1 green, 1 red; 1 green, 7 red; 8 red, 1 blue, 8 green
-Game 11: 7 red, 1 blue, 1 green; 6 blue, 1 green, 3 red; 5 blue, 10 red
-Game 12: 1 green, 8 red, 5 blue; 6 red, 1 blue; 2 blue, 1 red; 1 blue, 1 red, 1 green; 8 red, 9 blue
-Game 13: 1 green, 6 red; 7 blue, 1 red, 1 green; 3 blue, 4 red
-Game 14: 1 red, 1 green, 1 blue; 3 blue, 1 red, 1 green; 1 blue, 5 green, 1 red
-Game 15: 6 green, 1 blue, 1 red; 6 green, 1 blue, 8 red; 1 red, 7 blue, 2 green; 1 green, 1 red, 4 blue
-Game 16: 1 green, 1 red, 7 blue; 2 red, 10 green, 9 blue; 1 red, 3 green, 5 blue
-Game 17: 2 blue, 3 green; 1 green, 1 blue, 7 red; 1 green, 2 blue
-Game 18: 8 blue, 9 green, 2 red; 9 blue, 7 green; 3 red, 9 green, 1 blue; 1 blue, 7 green, 2 red; 1 green, 8 blue, 4 red
-Game 19: 3 green, 2 red, 1 blue; 1 blue, 3 green, 1 red; 1 red, 1 blue
-Game 20: 2 red, 4 green, 1 blue; 1 blue, 7 green; 7 blue, 9 green; 4 red, 5 green, 7 blue
+.680................800*..............684................329....*.......960.186........725........*......&.....631.....700*818..............
+............-402...........%.........@.........576.............956................../.....*....237....490........................998........
+........624.........600/...283..906................301....903...........=495.....917..165..193......................................+.......
+....977.+........................*........*610.....-....................................*.......489*795.......-....@545..915......*......641
+...-.......123........@........113.....643............117.483../...................961.984..................878...........*........277..@...
+.............$....787..80....................490......$....../..802.....591...373...*..............228..................848..840............
+.613.......................810..........740......476.....902............$..........201......%.......$..-.......993......................701.
+......268.......429.........$..........+....582..........@...538*789......................941...136.....334......*.........508...250........
