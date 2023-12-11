@@ -78,20 +78,20 @@ import re
 input_2 = test.lower()
 container = input_2.split("\n")
 
-
-def circle_scan(array, index):
+engine_map = {}
+def circle_scan(array, x, y):
     if len(array) == 2 and array[0].isdigit() or array[1].isdigit():
         tally += int(array[0] or 0)
         tally += int(array[1] or 0)
     elif array == ["", ""]:
-        dict["BING"] = tuple(index)
+        engine_map["BING"] = tuple(x, y)
     elif len(array) == 1 and array[0].isdigit():
-        dict[array[0]] == tuple(index)
+        engine_map[array[0]] == tuple(x, y)
+    print(engine_map)
 
 
 def gondola(input):
     # regex_1 = [^\d.]
-    engine_map = {}
     # print(input)
     tally = 0
     
@@ -110,7 +110,7 @@ def gondola(input):
             elif char is not char.isalnum():
                 part_nums = re.split("BING", char)
                 print(part_nums, "PN")
-                circle_scan(part_nums, idx)
+                circle_scan(part_nums, index, idx)
 
                 
 
