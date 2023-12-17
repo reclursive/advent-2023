@@ -11,36 +11,6 @@ container = input_2.split("\n")
 # then apply check only while within range to speed up process
 #while index is between and under range
 
-# print(container)
-
-# for card in container:
-#     c_and_h = card.split(" | ")
-#     card_num = c_and_h[0]
-#     hand = c_and_h[1]
-#     print(hand, "HAND")
-#     winning_nums = c_and_h[0].split(":")[1]
-#     winning_nums2 = winning_nums.split(" ")
-#     winning_final = sorted(list(filter(None, winning_nums2)), key=float)
-#     print(winning_final)
-
-
-# class Lottery:
-#   def __init__(winning, holding, cardnumber):
-#     self.winning = winning
-#     self.hand = hand
-
-#     def display(self):
-#         print(self.name)
-#         print(self.idnumber)
-         
-#     def details(self):
-#         print("My name is {}".format(self.name))
-#         print("IdNumber: {}".format(self.idnumber))
-
-# #  powerBall = Lottery(winning_final, hand , check())
-
-
-# print(container)
 
 class Lottery:
     def __init__(self, bundle):
