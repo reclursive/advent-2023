@@ -49,27 +49,35 @@ class Lottery:
 #avoid append 
     def card_win(self):
         global total_tally
-        for card, index in enumerate(self.bundle):
-            card_wins = []
+        for index, card in enumerate(self.bundle):
+            index = index+1
+            # print(index, card)
+            num_wins = 0
+            card_box = []
             c_and_h = card.split(" | ")
+            print(c_and_h)
             card_num = c_and_h[0]
             main_hand = sorted(list(filter(None, c_and_h[1].split(" "))), key=float)  
             winning_nums = card_num.split(":")[1]
             winning_nums2 = winning_nums.split(" ")
             winning_final = sorted(list(filter(None, winning_nums2)), key=float)  
 
-            # for num in main_hand:
-            #     if int(num) < int(winning_final[0]):
-            #         continue
-            #     elif int(num) <= int(winning_final[-1]):
-            #         if num in winning_final:
-            #             if card_wins == 0 or card_wins ==1:
-            #                 card_wins.append(card_num)
-            #             else:
-            #                 card_wins = card_wins*2     
-            #         else:
-            #             continue
-            # total_tally += card_wins
+            for num in main_hand:
+                if int(num) < int(winning_final[0]):
+                    continue
+                elif int(num) <= int(winning_final[-1]):
+                    if num in winning_final:
+                        if num_wins == 0:
+                            num_wins += 1
+                            copy = list(self.bundle[index+1]).copy()
+                            card_box.append(copy)
+                        else:
+                            num_wins += num_wins
+                            copy2 = list(self.bundle[index+num_wins]).copy()
+                            card_box.append(copy2)    
+                    else:
+                        continue
+            print(card_box, "CB")    
 
 
 
@@ -77,7 +85,7 @@ class Lottery:
 
 powerBall = Lottery(container)
 
-print(powerBall.card_compare())
+print(powerBall.card_win())
 
 
 
